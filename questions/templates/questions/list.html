@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+
+    <title>Sample</title>
+</head>
+<body>
+
+
+
+
+
+<h1>Questionnaire</h1>
+
+
+
+{% if objects0 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects0|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects0 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects1 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects1|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects1 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects2 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects2|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects2 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects3 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects3|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects3 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects4 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects4|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects4 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects5 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects5|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects5 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects6 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects6|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects6 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects7 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects7|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects7 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects8 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects8|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects8 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+{% endif %}
+
+
+
+{% if objects9 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+<h2>{{ objects9|first }}</h2>
+
+<table  border="1" bordercolor="#333333">
+
+    <thead>
+    <tr >
+        <th width="5%">Question Number</th>
+        <th width="80%" >Question</th>
+        <th width="10%">Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for obj in objects9 %}    
+    <tr>
+        <th class="text-center">{{ forloop.counter }}</th>
+        <td >a. {{ obj.a }}<br/>
+             b. {{ obj.b }}<br />
+             c. {{ obj.c }}<br/>
+        </td>
+        <td align="center">
+            <input type="radio" id="q1" name="{{ obj.id }}" value="a"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="b"><br/>
+            <input type="radio" id="q1" name="{{ obj.id }}" value="c"><br/>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+<br/>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+<!--h2>Title1</h2>
+
+<table border="1" bordercolor="#333333">
+
+    <thead>
+    <tr>
+        <th >Question Number</th>
+        <th >Question</th>
+        <th >Your Answer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>1</th>
+        <td>Muy Bueno<br/>
+            Bueno<br />
+            Mas o Mnenos<br/>
+            Mal<br/>
+            Muy Mal<br/>
+        </td>
+        <td>
+            <input type="radio" id="q1" name="q1" value="email"><br/>
+            <input type="radio" id="q1" name="q1" value="email"><br/>
+            <input type="radio" id="q1" name="q1" value="email"><br/>
+            <input type="radio" id="q1" name="q1" value="email"><br/>
+            <input type="radio" id="q1" name="q1" value="email"><br/>
+        </td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td>Muy Bueno<br/>
+            Bueno<br />
+            Mas o Mnenos<br/>
+            Mal<br/>
+            Muy Mal<br/></td>
+        <td> 
+            <input type="radio" id="q2" name="contact1" value="email"><br/>
+            <input type="radio" id="q2" name="contact1" value="email"><br/>
+            <input type="radio" id="q2" name="contact1" value="email"><br/>
+            <input type="radio" id="q2" name="contact1" value="email"><br/>
+            <input type="radio" id="q2" name="contact1" value="email"><br/>
+        </td>
+    </tr>
+    </tbody>
+</table-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>    
+</html>
